@@ -1,0 +1,129 @@
+.bN{
+	border : none;
+}
+.cP{
+	cursor : pointer;
+}
+.dIB{
+	display : inline-block;
+}
+.fN{
+	float : none;
+}
+.fR{
+	float : right;
+}
+.input{
+	padding-top : 5px;
+	margin: 10px 0;
+	width : 96%;
+	display : block;
+	font-size : 18px;
+	border-right : 5px;
+	border : none;
+	transition : 0.3s linear;
+}
+.inputBox{
+	display :none;
+	position : relative;
+	width : 350px;
+}
+.inputBox1{
+	width : 0;
+	height : 0;
+	border-left : 20px solid transparent;
+	border-right : 20px solid transparent;
+	border-bottom : 15px solid #ECF0F1;
+	left : 10%;
+	position : absolute;
+	top : -10px;
+}
+.inputBox2{
+	background-color : #ecf0f1;
+	width : 350px;
+	border-radius : 5px;
+	padding-top : 5px;
+}
+.link{
+	float : right;
+	color : #fff !important;
+	background-color : #000 !important;
+	border-shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	overflow : hidden;
+	text-decoration : none;
+	padding-top : 10px;
+}
+.link1{
+	width : 100%;
+	display : block;
+}
+.o0{
+	outline : 0;
+}
+.oN{
+	outline : none;
+}
+.p1{
+	padding : 8px 16px;
+}
+.p10{
+	padding : 10px;
+}
+.p{
+	padding : 12px 24px !important;
+}
+.pF{
+	position : fixed;
+}
+.pS{
+	position : static;
+}
+.row{
+	color : #fff !important;
+	background-color : #000 !important;
+	border-shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.submit{
+	width : 100%;
+	display : block;
+	background : black;
+	padding : 10px;
+	font-size : 20px;
+	border : none;
+	color : #FFF !important;
+	border-radius : 5px;
+}
+.t0{
+	top : 0;
+}
+.tag{
+	user-select : none;
+	vertical-align : middle;
+	overflow : hidden;
+	text-decoration : none;
+	color : inherit;
+	background-color : inherit;
+	text-align : center;
+	cursor : pointer;
+}
+.tag1{
+	white-space : normal;
+	user-select : none;
+	vertical-align : middle;
+	overflow : hidden;
+	text-decoration : none;
+	color : inherit;
+	background-color : inherit;
+	text-align : center;
+	cursor : pointer;
+	border : none;
+}
+.taL{
+	text-align : left;
+}
+.w100{
+	width : 100%;
+}
+.z1{
+	z-index : 1;
+}
