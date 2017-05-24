@@ -41,10 +41,12 @@
 					<div class="inputBox2">
 						<div class="p10">
 							<fieldset class="bN">
-								<label>Email</label><input type="email" value="example@example.com" class="input">
+								<form onsubmit="confirmLogin();">
+								<label>Email</label><input type="email" value="example@example.com" class="input" id="loginEmail" onclick="clearEmailField();">
 								<lable>Password</lable>
-								<input type="password" class="input">
-								<input type="submit" value="Login" class="submit">
+								<input type="password" class="input" id="loginPassword">
+								<input type="submit" value="Login" class="submit">								
+								</form>
 							</fieldset>
 						</div>
 					</div>
