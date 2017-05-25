@@ -1,4 +1,5 @@
 function login(ele){
+	$(".inputBox2").offset({top : $(".row").outerHeight(), left : $(window).width() - $("#login").outerWidth()});
 	$("#login").fadeToggle("slow");
 }
 function signup(ele){

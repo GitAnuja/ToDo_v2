@@ -22,19 +22,7 @@
 			</td>
 			<td><a href="javascript:;" class="link" onclick="signup(this);">SIGNUP</a></td>
 		</tr>
-		<tr>
-		<td>
-				<div class="inputBox" id="more">
-					<div class="inputBox1">
-						<div class="inputBox2">
-							<div class="p10">
-								<a href="#" class="link1 p1 taL oN tag1 fN">ToDo</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</td>
-		<td></td>
+		<!-- tr>
 		<td>
 			<div class="inputBox" id="login">
 					<div class="inputBox1"></div>
@@ -75,7 +63,23 @@
 					</div>
 				</div>
 			</td>
-		</tr>
+		</tr-->
 	</table>
+	<div class="inputBox" id="login">
+		<div class="inputBox2">
+			<div class="p10">
+				<fieldset class="bN">
+					<form onsubmit="confirmLogin();">
+						<label>Email</label><input type="email"
+							value="example@example.com" class="input" id="loginEmail"
+							onclick="clearEmailField();">
+						<lable>Password</lable>
+						<input type="password" class="input" id="loginPassword"> <input
+							type="submit" value="Login" class="submit">
+					</form>
+				</fieldset>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
