@@ -1,8 +1,9 @@
 function login(ele){
-	$(".inputBox2").offset({top : $(".row").outerHeight(), left : $(window).width() - $("#login").outerWidth()});
+	$("#login .inputBox2").offset({top : $(".row").outerHeight(), left : $(window).width() - $("#login").outerWidth()});
 	$("#login").fadeToggle("slow");
 }
 function signup(ele){
+	$("#signup .inputBox2").offset({top : $(".row").outerHeight(), left : $(window).width() - $("#signup").outerWidth()});
 	$("#signup").fadeToggle("slow");
 }
 function showMore(ele){
