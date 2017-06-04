@@ -37,4 +37,13 @@ function loginUser(email, password){
 	$(".row").children().last().prev().css("display", "none");
 	var div = "<div class='link'>Hi "+username+"!</div>";
 	$(".row").children().last().html(div);
+	$("#login").hide();
+}
+function onloadFunc(){
+	$("#login input").on("keyup", function(e){
+		console.log(e.keyCode)
+		if(e.keyCode == 13){
+			confirmLogin();			
+		}
+	})
 }
