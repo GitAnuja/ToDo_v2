@@ -33,5 +33,8 @@ function clearEmailField(){
 	}
 }
 function loginUser(email, password){
-	
+	var username = "Anuja";
+	$(".row").children().last().prev().css("display", "none");
+	var div = "<div class='link'>Hi "+username+"!</div>";
+	$(".row").children().last().html(div);
 }
