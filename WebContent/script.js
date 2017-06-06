@@ -1,12 +1,14 @@
 function login(ele){
 	$("#login .inputBox2").offset({top : $(".row").outerHeight(), left : $(window).width() - $("#login").outerWidth()});
 	$("#login").fadeToggle("slow");
+	event.stopPropagation();
 }
 function signup(ele){
 	$("#signup .inputBox2").offset({top : $(".row").outerHeight(), left : $(window).width() - $("#signup").outerWidth()});
 	$("#signup").fadeToggle("slow");
 }
 function showMore(ele){
+	$("#more .inputBox2").offset({top : $(".row").outerHeight(), left : $(ele).offset().left});
 	$("#more").fadeToggle("slow");
 }
 function confirmLogin(){
@@ -41,9 +43,8 @@ function loginUser(email, password){
 }
 function onloadFunc(){
 	$("#login input").on("keyup", function(e){
-		console.log(e.keyCode)
 		if(e.keyCode == 13){
 			confirmLogin();			
 		}
-	})
+	});
 }
