@@ -77,3 +77,7 @@ function confirmSubmit(){
 	}
 	loginUser(email, password);
 }
+function more(ele){
+	window.history.pushState({}, '', ele);
+	$("#more").hide();
+}
