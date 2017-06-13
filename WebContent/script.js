@@ -48,6 +48,13 @@ function onloadFunc(){
 			confirmLogin();			
 		}
 	});
+//	var routes = {
+//	        '/todo' : function(){
+//	        	todo();
+//	        }
+//	      };
+//	var router = Router(routes);
+//    router.init();
 }
 function confirmSubmit(){
 	var name = $("#signupName").val();
@@ -78,6 +85,13 @@ function confirmSubmit(){
 	loginUser(email, password);
 }
 function more(ele){
-	window.history.pushState({}, '', ele);
+	window.history.pushState({}, '', "#/"+ele);
+//	$(window).trigger("hashchange",)
 	$("#more").hide();
+	if(ele == "todo"){
+		todo();		
+	}
+}
+function todo(){
+	$("#show").html("ANUJA TODO");
 }
