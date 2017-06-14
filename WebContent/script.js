@@ -85,13 +85,24 @@ function confirmSubmit(){
 	loginUser(email, password);
 }
 function more(ele){
-	window.history.pushState({}, '', "#/"+ele);
+	if(ele == "home"){
+		window.history.pushState({}, '', "#/");
+	}
+	else{
+		window.history.pushState({}, '', "#/"+ele);		
+	}
 //	$(window).trigger("hashchange",)
 	$("#more").hide();
 	if(ele == "todo"){
 		todo();		
 	}
+	else if(ele == "home"){
+		home();
+	}
 }
 function todo(){
 	$("#show").html("ANUJA TODO");
+}
+function home(){
+	$("#show").html("");
 }
