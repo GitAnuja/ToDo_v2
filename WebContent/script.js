@@ -1,15 +1,20 @@
 function login(ele){
+	hideMenu();
 	$("#login .inputBox2").offset({top : $(".row").outerHeight(), left : $(window).width() - $("#login").outerWidth()});
 	$("#login").fadeToggle("slow");
 	event.stopPropagation();
 }
 function signup(ele){
+	hideMenu();
 	$("#signup .inputBox2").offset({top : $(".row").outerHeight(), left : $(window).width() - $("#signup").outerWidth()});
 	$("#signup").fadeToggle("slow");
+	event.stopPropagation();
 }
 function showMore(ele){
+	hideMenu();
 	$("#more .inputBox2").offset({top : $(".row").outerHeight(), left : $(ele).offset().left});
 	$("#more").fadeToggle("slow");
+	event.stopPropagation();
 }
 function confirmLogin(){
 	var email = $("#loginEmail").val();
@@ -55,6 +60,7 @@ function onloadFunc(){
 //	      };
 //	var router = Router(routes);
 //    router.init();
+	$(document).on("click", hideMenu);
 }
 function confirmSubmit(){
 	var name = $("#signupName").val();
@@ -105,4 +111,7 @@ function todo(){
 }
 function home(){
 	$("#show").html("");
+}
+function hideMenu(){
+	$(".inputBox").hide();
 }
