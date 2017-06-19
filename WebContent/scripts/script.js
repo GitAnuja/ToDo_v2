@@ -61,10 +61,6 @@ function onloadFunc(){
 //	var router = Router(routes);
 //    router.init();
 	$(document).on("click", hideMenu);
-	var se = document.createElement("script");
-	se.src = "scripts/todo.js";
-	var s1 = document.getElementsByTagName("script")[0];
-	s1.parentNode.insertBefore(se, s1);	
 }
 function confirmSubmit(){
 	var name = $("#signupName").val();
@@ -111,7 +107,7 @@ function more(ele){
 	}
 }
 function todo(){
-	$("#show").html(Handlebars.templates.todo);
+	$("#show").html(Handlebars.templates.todo());
 }
 function home(){
 	$("#show").html("");
