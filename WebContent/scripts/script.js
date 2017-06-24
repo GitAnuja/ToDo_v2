@@ -113,5 +113,7 @@ function home(){
 	$("#show").html("");
 }
 function hideMenu(){
-	$(".inputBox").hide();
+	if(event.srcElement.tagName != "INPUT"){
+		$(".inputBox").hide();		
+	}
 }
