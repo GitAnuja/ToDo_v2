@@ -42,7 +42,7 @@ function clearEmailField(){
 function loginUser(email, password){
 	var username = "Anuja";
 	$(".row").children().last().prev().css("display", "none");
-	var div = "<div class='link'>Hi "+username+"!</div>";
+	var div = "<div class='link' onclick='profile();'>Hi "+username+"!</div>";
 	$(".row").children().last().html(div);
 	$("#login").hide();
 	$("#signup").hide();
@@ -116,4 +116,10 @@ function hideMenu(){
 	if(event.srcElement.tagName != "INPUT"){
 		$(".inputBox").hide();		
 	}
+}
+function profile(){
+	hideMenu();
+	$("#profile .inputBox2").offset({top : $(".row").outerHeight(), left : $(window).width() - $("#profile").outerWidth()});
+	$("#profile").fadeToggle("slow");
+	event.stopPropagation();
 }
