@@ -1,18 +1,18 @@
 function login(ele){
 	hideMenu();
-	$("#login .inputBox2").offset({top : $(".row").outerHeight(), left : $(window).width() - $("#login").outerWidth()});
+	$("#login .inputBox2").offset({top : "0px", left : $(window).width() - $("#login").outerWidth()});
 	$("#login").fadeToggle("slow");
 	event.stopPropagation();
 }
 function signup(ele){
 	hideMenu();
-	$("#signup .inputBox2").offset({top : $(".row").outerHeight(), left : $(window).width() - $("#signup").outerWidth()});
+	$("#signup .inputBox2").offset({top : "0px", left : $(window).width() - $("#signup").outerWidth()});
 	$("#signup").fadeToggle("slow");
 	event.stopPropagation();
 }
 function showMore(ele){
 	hideMenu();
-	$("#more .inputBox2").offset({top : $(".row").outerHeight(), left : $(ele).offset().left});
+	$("#more .inputBox2").offset({top : "0px", left : $(ele).offset().left});
 	$("#more").fadeToggle("slow");
 	event.stopPropagation();
 }
@@ -119,7 +119,7 @@ function hideMenu(){
 }
 function profile(){
 	hideMenu();
-	$("#profile .inputBox2").offset({top : $(".row").outerHeight(), left : $(window).width() - $("#profile").outerWidth()});
+	$("#profile .inputBox2").offset({top : "0px", left : $(window).width() - $("#profile").outerWidth()});
 	$("#profile").fadeToggle("slow");
 	event.stopPropagation();
 }
