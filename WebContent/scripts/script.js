@@ -113,7 +113,7 @@ function home(){
 	$("#show").html("");
 }
 function hideMenu(){
-	if(event.srcElement.tagName != "INPUT"){
+	if(event.srcElement.tagName != "INPUT" && event.srcElement.tagName != "A" && event.srcElement.offsetParent.className != "inputBox2"){
 		$(".inputBox").hide();		
 	}
 }
